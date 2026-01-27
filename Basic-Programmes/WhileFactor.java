@@ -7,7 +7,7 @@ public class WhileFactor {
         int i = 1;
         while(i<=n) {
             if (n % i == 0) System.out.println("The factors of " + n + " is " + i);
-            i++;
+            i++;//
         }
     }
 }
