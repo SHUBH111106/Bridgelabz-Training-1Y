@@ -1,0 +1,18 @@
+package Loops;
+import java.util.Scanner;
+public class N_Numbers {
+    static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int i = 1;
+//        while(i<=n){
+//            System.out.println(i);
+//            i++;
+//        }
+        for(int i = 1 ; i<=100 ; i++){
+            if ( i%3==0 || i%5 == 0){
+                System.out.println(i);
+            }
+        }
+    }
+}
