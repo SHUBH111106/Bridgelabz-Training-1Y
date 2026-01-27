@@ -8,7 +8,7 @@ public class EmployeeBonus {
         System.out.print("Enter Years Of Services :");
         int year = sc.nextInt();
         for(int i = 0 ; i<=year ; i++ ){
-            double bonus = salary * i/100;
+            double bonus = salary * i/100;//
             System.out.println("bonus for " + i + " years is " + bonus);
         }
     }
