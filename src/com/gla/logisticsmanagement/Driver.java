@@ -1,22 +1,26 @@
 package com.gla.logisticsmanagement;
 
 public class Driver {
-    private String id;
-    private String name;
 
-    public String getId() {
-        return id;
+    private String driverId;
+    private String name;
+    private RouteLinkedList<CheckPoint> routeHistory;
+
+    public Driver(String driverId, String name) {
+        this.driverId = driverId;
+        this.name = name;
+        this.routeHistory = new RouteLinkedList<>();
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getDriverId() {
+        return driverId;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public RouteLinkedList<CheckPoint> getRouteHistory() {
+        return routeHistory;
     }
 }
